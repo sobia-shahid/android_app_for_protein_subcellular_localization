@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/homeb">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/image_upload"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="405dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_button"
+            android:src="@drawable/ic_action_img"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Upload Photo"
+            android:fontFamily="@font/f2"
+            android:textColor="#ff8d00"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btm_nav"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_nav"
+        android:background="@color/Splashbackground"
+        app:itemBackground="@color/Splashbackground"
+       app:itemTextColor="@color/darkgrey"
+        app:itemIconTint="@color/darkgrey">
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

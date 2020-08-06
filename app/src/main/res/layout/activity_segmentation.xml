@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".segmentation"
+    android:background="@color/Splashbackground"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <ImageView
+        android:id="@+id/imageview_segment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="*Select the segmentation technique and click apply*"/>
+
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/segment_spin"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:entries="@array/image_segmentation_technique"
+        android:background="@drawable/custom_btn_solid"
+        android:textAlignment="center"
+        android:pointerIcon="arrow"
+        android:spinnerMode="dropdown">
+
+    </android.support.v7.widget.AppCompatSpinner>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <Button
+        android:id="@+id/segment"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:text="apply"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/custom_btn_round"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btmnavnext"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/btm_nav_upload"
+        android:background="@color/Splashbackground"
+        app:itemBackground="@color/Splashbackground"
+        app:itemTextColor="@color/darkgrey"
+        app:itemIconTint="@color/darkgrey"
+        >
+
+
+    </android.support.design.widget.BottomNavigationView>
+
+</RelativeLayout>

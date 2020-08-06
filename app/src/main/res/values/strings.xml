@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Protein Classification</string>
+    <string-array name="image_enhance_techniques">
+        <item>Histogram</item>
+        <item>Bilateral</item>
+    </string-array>
+    <string-array name="image_segmentation_technique">
+        <item>GrabCut</item>
+        <item>Watershed</item>
+    </string-array>
+    <string name="title_activity_welcomscreen">welcomscreen</string>
+</resources>

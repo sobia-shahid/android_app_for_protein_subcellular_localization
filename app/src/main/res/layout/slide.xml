@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/slidelinearlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    android:orientation="vertical"
+    android:background="@drawable/walkthroughback">
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:textColor="#FFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Title here"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:text="Description"
+        android:textSize="17sp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/textdecription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

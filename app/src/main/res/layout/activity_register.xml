@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/register"
+    tools:context=".Register" >
+
+
+    <EditText
+        android:id="@+id/em1"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="435dp"
+        android:background="@drawable/textview"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="username"
+        android:inputType="text"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorHint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/ps1"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="365dp"
+        android:background="@drawable/textview"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="Password"
+
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColorHint="@color/colorPrimary" />
+
+
+    <EditText
+        android:id="@+id/pr3"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="294dp"
+        android:background="@drawable/textview"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:hint="confirm password"
+
+        android:inputType="textPassword"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+
+        android:textColorHint="@color/colorPrimary" />
+
+
+    <Button
+        android:id="@+id/buttonw"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="86dp"
+        android:layout_marginBottom="204dp"
+        android:background="@drawable/button_default"
+        android:text="Sign up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</RelativeLayout>
